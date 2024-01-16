@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="specialimages/favicon.ico" type="image/x-icon">
+    <title>How the U.S.A. became a superpower</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Anton';
+    src: url('fonts/Anton-Regular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--color1);
+}
+
+
+:root{
+    --color1: #CB0303;
+    --color2: #060066;
+    --color3: #FFFFFF;
+
+    --font1: 'Bebas Neue', sans-serif;
+    --font2: 'Anton', sans-serif;
+    --font3: 'Roboto', sans-serif;
+    --font-footer: 'Poppins', sans-serif;
+}
+
+header{
+   background-color: var(--color2);
+   height: 130px;
+   padding-top: 20px;
+   padding-bottom: 45px;
+}
+
+header > h1{
+    color: var(--color3);
+    font-family: var(--font1);
+    font-size: 3.5em;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+}
+
+header p{
+    color: var(--color3);
+    font-family: var(--font1);
+    font-size: 1.4em;
+    font-weight: normal;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.371);
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+
+#navegation{
+    background-color: var(--color2);
+}
+
+#navegation  li{
+    display: inline;
+    font-family: var(--font3);
+}
+
+#navegation a {
+    color: var(--color3);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+#navegation a:hover{
+    background-color: rgb(39, 52, 228); 
+    color: rgb(208, 225, 243);
+    border-radius: 10px; 
+    transition-duration: 0.5s;
+}
+
+
+
+main{
+    background-color: var(--color3);
+    min-width: 260px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+main article  h1{
+    font-family: var(--font2);
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 30px;
+}
+
+article p{
+    text-align: justify;
+    font-family: var(--font3);
+    font-weight: 500;
+    text-indent: 50px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+article h2{
+    font-family: var(--font2);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+article a{
+   text-decoration: none;
+   color: var(--color1);
+   font-weight: 700;
+}
+
+article a:hover{
+    text-decoration: underline;
+    color: var(--color2);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+figcaption{
+    font-family: var(--font3);
+    font-weight: normal;
+    background-color: rgb(227, 223, 223);
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--color2);
+    padding-left: 5px;
+}
+
+.video{
+    position: relative;
+    background-color: var(--color2);
+    margin: 0px -20px 0px -20px;
+    padding-bottom: 59%;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside section h2{
+    font-family: var(--font2);
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.links-sites > h3{
+    margin-top: 30px;
+    font-family: var(--font3); 
+    margin-bottom: 5px; 
+    font-size: 1em; 
+}
+
+.links-sites ul{
+   list-style-position: inside;
+   list-style-type: '→ ';
+}
+
+.links-sites ul li a{
+    color: var(--color1);
+    font-family: var(--font3);
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.links-sites a:hover{
+   color: var(--color2);
+}
+
+hr{
+    margin-top: 40px;
+}
+
+footer{
+    background-color: #E9F1F4;
+    padding: 70px 0px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-columns{
+    width: 22%;
+    padding: 0px 13px;
+}
+
+.footer-columns > h4{
+   font-size: 18px;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   font-weight: 600;
+   position: relative;
+   color: var(--color2);
+}
+
+.footer-columns > h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--color1);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-columns ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-columns ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-columns ul li a:hover{
+    color: #14104f;
+    padding-left: 8px;
+}
+
+.footer-columns .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--color2);
+    transition: all 0.5s ease;
+}
+
+.footer-columns .social-links a:hover{
+    color: white;
+    background-color: var(--color2);
+}
+
+/*responsive*/
+
+
+@media(max-width: 767px){
+    .footer-columns{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-columns{
+        width: 100%;
+    }
+}
+
+.final-links{
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px 0px 10px;
+    font-family: var(--font3);
+    font-size: 12px;
+}
+
+.copyright-paragraph{
+    margin: 50px 0px 0px 10px;
+    font-family: var(--font3);
+    font-size: 12px;
+}
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>GEOPOLITICAL WORLD</h1>
+        <p>The world explained in a simple way</p>
+    </header>
+    <nav id="navegation">
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About us</a></li>
+             <li><a href="#">Store</a></li>
+             <li><a href="#">Courses</a></li>
+             <li><a href="#">Youtube channel</a></li>
+         </ul>
+    </nav>
+     
+    <main>
+        <article>
+             <section>
+                 <h1>THE RISE OF THE UNITED STATES AS A GLOBAL SUPERPOWER</h1>
+
+                 
+                 <p>In the annals of world history, the United States stands as a testament to the extraordinary narrative of a nation that transcended its modest origins to emerge as a global superpower. The American journey, a tapestry woven with threads of resilience and audacity, reflects a nuanced interplay of historical forces, economic acumen, military prowess, and strategic alliances. This transformation wasn't a mere overnight spectacle but an intricate dance of events, a testament to the nation's adaptability and determination. As we embark on this exploration, let's unravel the layers of the United States' remarkable saga and decipher the unique factors that propelled it to the pinnacle of global influence and power.</p>
+                 
+                 <p>In this article we're going to see the evolution of the U.S.A. as a global superpower and how its influence impacted the whole world. But before that, we need to see a litle bit about the history of this country to understand better this process of evolution. And if you want to see the whole history of the United States <a href="#">check out this article</a> So let's get started.</p>
+             </section>
+ 
+             <section>
+                 <h2>The Early Foundations</h2>
+                 <figure>
+                     <img src="specialimages/thirteen-colonies.png" alt="Thirteen colonies">
+                     <small>
+                         <figcaption> The Thirteen Colonies in red.</figcaption>
+                     </small>
+                 </figure>
+                 <p>The seeds of American power were sown during the 18th century when thirteen British colonies in North America sought independence. <a href="https://www.bostonteapartyship.com/american-revolution" target="_blank" rel="external">The American Revolutionary War</a> (1775-1783) marked the birth of the <strong>United States</strong>, as the fledgling nation emerged victorious against the mighty British Empire. The Founding Fathers, armed with revolutionary ideals, laid the groundwork for a new republic, setting the stage for America's ascent.</p>
+                 <p>The U.S. Constitution, adopted in 1787, established the framework for the federal government. George Washington, the first president, set precedents that shaped the nation. The <a href="https://acwm.org/louisiana-purchase-edu/?gad_source=1&gclid=CjwKCAiA7t6sBhAiEiwAsaieYkfOVk3m2nRd_smRtASvLlEDs5f0PunDSduXwUTyObGOQTvca6zNIBoCGn4QAvD_BwE" target="_blank" rel="external">Louisiana Purchase</a> in 1803 and westward expansion fueled territorial growth.</p>
+                 <p>However, <strong>the issue of slavery ignited the Civil War</strong> (1861-1865) between the Northern Union and the Southern Confederacy. The Union's victory led to the abolition of slavery, but the Reconstruction era faced challenges in integrating formerly enslaved individuals into society.</p>
+             </section>
+ 
+             <section>
+                 <h2>Economic Prowess</h2>
+                 <figure>
+                     <img src="specialimages/industries-usa.jpg" alt="Industries in the U.S.A.">
+                     <small>
+                         <figcaption>During the end of the 19th century and 20th century the industrialization in the U.S.A. grew a lot.</figcaption>
+                     </small>
+                 </figure>
+                     <p>The 19th century saw the United States rapidly expanding westward, fueled by the notion of <a href="https://www.khanacademy.org/humanities/us-history/the-early-republic/age-of-jackson/a/manifest-destiny#:~:text=Manifest%20Destiny%20was%20the%20idea,or%20destroy%20the%20native%20population." target="_blank" rel="external">Manifest Destiny</a>. Industrialization took hold, turning America into an economic powerhouse. <strong>The abundance of natural resources, coupled with technological advancements, led to the rise of industries like steel, railroads, and oil</strong>. By the turn of the 20th century, the U.S. had a burgeoning economy, laying the foundation for its future global influence.</p>
+                     <p>Also the early 20th century saw social and political reforms aimed at addressing issues such as corruption, inequality, and workers' rights. Women gained the right to vote with the 19th Amendment in 1920.</p>
+             </section>
+ 
+                 <section>
+                     <h2>Military Might</h2>
+                     <figure>
+                         <img src="specialimages/usa-world-wars.jpg" alt="American soldiers with the flag of the U.S.A.">
+                         <small>
+                             <figcaption>Over the 2 world wars the United States' military power increased a lot, including leading the europeans.</figcaption>
+                         </small>
+                     </figure>
+                     <p>The two World Wars played a pivotal role in shaping the United States' destiny. While initially hesitant to engage in global affairs, the devastation of World War I and the aggression of World War II compelled the U.S. to assume a leading role. <strong>The development of nuclear weapons further solidified its military prowess, making it a key player in the post-war world order</strong>.</p>
+                     <p>American imperialism, both political and economic, played a critical role in shaping the post-war world order. The <ins>Marshall Plan</ins>, designed to rebuild war-torn Europe, demonstrated American economic and political influence on a global scale.</p>
+                 </section>
+ 
+                 <section>
+                     <h2>The Cold War Era</h2>
+                     <figure>
+                         <img src="specialimages/cold-war.jpg" alt="Flags of the U.S.S.R. and the U.S.A.">
+                         <small>
+                             <figcaption>The cold war made the world gets divided at the time between the communist block and the capitalist block.</figcaption>
+                         </small>
+                     </figure>
+                     <p><strong>The post-World War II period marked the beginning of the Cold War</strong>, a geopolitical struggle between the U.S. and the Soviet Union. The Marshall Plan, aimed at rebuilding war-torn Europe, showcased American economic generosity and solidified alliances. The U.S. took the lead in containing the spread of communism, projecting its influence globally through military alliances like NATO.</p>
+                     
+                     <p>The Cold War rivalry with the Soviet Union defined U.S. foreign policy. Concurrently, the Civil Rights Movement sought to end racial segregation and discrimination, leading to landmark legislation like the <a href="https://www.dol.gov/agencies/oasam/civil-rights-center/statutes/civil-rights-act-of-1964#:~:text=The%20Civil%20Rights%20Act%20of%201964%20prohibits%20discrimination%20on%20the,hiring%2C%20promoting%2C%20and%20firing." target="_blank" rel="external">Civil Rights Act of 1964</a>.</p>
+                     
+                     <p>With the disintegration of the Soviet Union, the ideological and political rivalry between the U.S. and the USSR, came to an end. The United States emerged as the sole superpower, devoid of a major geopolitical adversary. This newfound status allowed the U.S. to exert its influence without the constraints of a global ideological struggle.</p>
+ 
+                     <p><strong>The collapse of the Soviet Union in 1991 left the United States as the sole superpower</strong>. The end of the Cold War allowed the U.S. to exert its influence globally through diplomacy and international organizations. It played a crucial role in shaping global economic policies and addressing issues like climate change, solidifying its position as a responsible superpower.</p>
+                 </section>
+                     
+                 <section>
+                         <h2>Technological Innovation</h2>
+                         <figure>
+                             <img src="specialimages/silicon-valley-2.0.jpg" alt="Silicon Valley">
+                             <small>
+                                 <figcaption>Silicon Valley is renowned as a global hub for technology and innovation.</figcaption>
+                             </small>
+                         </figure>
+                         
+                         <p>The latter half of the 20th century witnessed unparalleled technological advancements. The U.S. became a hub for innovation, with Silicon Valley leading the charge in the digital revolution. The space race, epitomized by the Apollo moon landing in 1969, showcased American ingenuity and technological prowess. The 1990s witnessed a robust economic expansion in the United States, fueled by technological advancements and the rise of the internet. The American economy became a driving force of globalization, attracting investments and facilitating the spread of American cultural products worldwide. The U.S. model of free-market capitalism gained further prominence as an aspirational economic system.</p>
+                         
+                         <p>The U.S. is a major player in software development, with companies such as <ins>Microsoft</ins>, <ins>Oracle</ins>, and <ins>Adobe</ins> leading the way. Operating systems like <ins>Windows</ins> and <ins>macOS</ins>, as well as widely used productivity and creative software, originate from the U.S. Also platforms like <ins>Facebook</ins>, <ins>Twitter</ins>, and <ins>Instagram</ins> have revolutionized communication and social interaction globally. These platforms, along with others, have their origins in the U.S.</p>
+                         
+                         <p>In general the U.S. technology landscape is characterized by a culture of innovation, collaboration between academia and industry, and a robust ecosystem of startups and established corporations. Ongoing advancements in various technological domains continue to shape the nation's role as a global technology leader.</p>
+                 </section>
+ 
+                 <section>
+                     <h2>Conclusion</h2>
+ 
+                     <p>The journey of the United States from a group of colonies to a global superpower is a testament to the nation's resilience, innovation, and commitment to democratic values. As we navigate the complexities of the 21st century, understanding this historical odyssey is crucial to grasping the dynamics of international relations and the role the United States plays on the world stage. Abviously there're other factors that made the U.S. what is today, such as <strong>cultural influence</strong>, <strong>diplomacy</strong>, <strong>involvement in wars</strong> etc. But I decided to put the main things, I hope you had enjoyed.</p>
+                 </section>
+        </article>
+ 
+                 <hr>
+ 
+ 
+                <aside>
+                     <section>
+                         <h2>Learn more about the the United States</h2>
+                         
+                                             <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BShvYeyMm_Y?si=FkHXHuMApGsR8iRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                             </div>
+                     </section>
+                    
+                    
+                    
+                    <section class="links-sites">
+                        <h3>Links of websites:</h3>
+                            <ul>
+                        
+                                <li>
+                                    <a href="https://www.thebetterangelssociety.org/films/the-american-revolution/?gclid=CjwKCAiA7t6sBhAiEiwAsaieYm77nwX-Q53b2jJpP5C4JpEfcKZJrrVsJ6ZyESWMMxUcDUfPMPFuVhoCDBcQAvD_BwE" target="_blank" rel="external"><strong>The American Revolution</strong></a>
+                                </li>
+                        
+                                <li>
+                                    <a href="https://world101.cfr.org/contemporary-history/world-war/how-did-united-states-become-global-power" target="_blank" rel="external"><strong>How Did the United States Become a Global Power?</strong></a>
+                                </li>
+                        
+                                <li>
+                                    <a href="https://now.tufts.edu/2019/11/21/why-united-states-only-superpower" target="_blank" rel="external"><strong>Why the United States is the Only Superpower</strong></a>
+                                </li>
+                            </ul>
+                    </section>
+                </aside>
+             
+         
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                  <div class="footer-columns">
+                        <h4>Plans</h4>
+                    <!--column 1-->
+                        <ul>
+                            <li><a href="#">Student Solutions</a></li>
+                            <li><a href="#">Teacher Solutions</a></li>
+                            <li><a href="#">Study.com for Schools</a></li>
+                            <li><a href="#">Working Scholars® Solutions</a></li>
+                            <li><a href="#">Online Tutoring</a></li>
+                        </ul>
+                  </div>
+
+                  <!--column 2-->
+                  <div class="footer-columns">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Teach For Us</a></li>
+                        <li><a href="#">Press Center</a></li>
+                        <li><a href="#">Ambassador</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                    </ul>
+                  </div>
+
+                  <!--column 3-->
+                  <div class="footer-columns">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Site Feedback</a></li>
+                        <li><a href="#">Reports</a></li>
+                    </ul>
+                 </div>
+                 
+                 <!--column 4-->
+               <div class="footer-columns">
+                <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+               </div>
+            
+            </div>
+        </div>
+
+        <small>
+            <p class="copyright-paragraph">© Copyright 2003-2024 Study.com. All other trademarks and copyrights are the property of their respective owners. All rights reserved.</p>
+        </small>
+        <small>
+            <p><a class="final-links" href="#">Terms of Use</a>   <a class="final-links" href="#">Privacy Policy</a>   <a class="final-links" href="#">DMCA Notice</a>    <a class="final-links" href="#">ADA Compliance</a>   <a class="final-links" href="#">Honor Code Students</a></p>
+        </small>
+    </footer>
+</body>
+</html>
